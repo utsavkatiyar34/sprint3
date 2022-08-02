@@ -1,7 +1,16 @@
-import React from "react";
+import React,{ useContext } from "react";
+import Products from "../components/Products";
+import { AuthContext } from "../context/AuthContext";
+import{NavLink,Navigate}from "react-router-dom";
 
 const Home = () => {
-  return <div>{/* Code here */}</div>;
+  const {token} = useContext(AuthContext);
+  return <div style={{textAlign:"center"}}>
+    {token?<>
+    <Products/>
+    </>
+    : <Navigate to="/login" />}
+    </div>;
 };
 
 export default Home;
