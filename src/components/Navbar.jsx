@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from "react";
-import { NavLink, Navigate } from "react-router-dom";
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import "../App.css";
 import { Button } from "@mui/material";
 import { CartContext } from "../context/CartContext";

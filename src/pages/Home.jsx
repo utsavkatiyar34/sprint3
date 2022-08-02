@@ -1,7 +1,7 @@
 import React,{ useContext } from "react";
 import Products from "../components/Products";
 import { AuthContext } from "../context/AuthContext";
-import{NavLink,Navigate}from "react-router-dom";
+import{Navigate}from "react-router-dom";
 
 const Home = () => {
   const {token} = useContext(AuthContext);

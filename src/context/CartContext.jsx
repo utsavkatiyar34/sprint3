@@ -54,7 +54,7 @@ export const CartProvider = ({ children }) => {
   };
   const handleDec = (id) => {
     const item = cart.find((el) => el.productId === id);
-    if(item.count==1){
+    if(item.count===1){
       axios({
         method: "delete",
         url: `http://localhost:8090/cartItems/${id}`,
